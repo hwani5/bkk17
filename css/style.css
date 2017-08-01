@@ -1,6 +1,5 @@
-h1 {
-   color: blue;
-   text-align: center;
+body {
+  margin: 0;
 }
 
 .lg, .md, .sm, .xs {
@@ -17,10 +16,15 @@ h1 {
    }
 }
 
-/*  Portrait tablets and small desktops (768~991), Landscape tablets and medium desktops (992~1199)*/
+/* Portrait tablets and small desktops (768~991)
+   Landscape tablets and medium desktops (992~1199) */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
    h1 {
       text-align: right;
+   }
+   .title {
+      text-align:center;
+      font-size: 48px;
    }
    .md {
       visibility: visible;
@@ -28,7 +32,7 @@ h1 {
 }
 
 /* Landscape phones and portrait tablets */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
    .sm {
       visibility: visible;
    }
