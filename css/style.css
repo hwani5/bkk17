@@ -2,3 +2,42 @@ h1 {
    color: blue;
    text-align: center;
 }
+
+.lg, .md, .sm, .xs {
+   visibility: hidden;
+}
+
+/* Large desktops and laptops */
+@media screen and (min-width: 1200px) {
+   h1 {
+      text-align: left;
+   }
+   .lg {
+      visibility: visible;
+   }
+}
+
+/*  Portrait tablets and small desktops (768~991), Landscape tablets and medium desktops (992~1199)*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   h1 {
+      text-align: right;
+   }
+   .md {
+      visibility: visible;
+   }
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+   .sm {
+      visibility: visible;
+   }
+}
+
+/* Portrait phones and smaller */
+@media screen and (max-width: 480px) {
+   .xs {
+      visibility: visible;
+   }
+
+}
